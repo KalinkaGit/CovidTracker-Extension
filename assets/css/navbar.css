@@ -1,0 +1,22 @@
+navbar {
+    display: flex;
+    overflow: hidden;
+    background-color: #192841;
+    box-sizing: border-box;
+}
+
+navbar div {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    padding: 15px 15px;
+    font-size: 18px;
+}
+
+navbar div:hover {
+    cursor: pointer;
+}
+
+navbar .active {
+    border-bottom: solid;
+}

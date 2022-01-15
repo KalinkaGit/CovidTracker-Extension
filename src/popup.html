@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- METAs -->
+        <meta charset="UTF-8">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="../assets/css/libs/all.min.css"/>
+
+        <link rel="stylesheet" href="../assets/css/global.css"/>
+        <link rel="stylesheet" href="../assets/css/navbar.css"/>
+        <link rel="stylesheet" href="../assets/css/home.css"/>
+        <link rel="stylesheet" href="../assets/css/news.css"/>
+        <link rel="stylesheet" href="../assets/css/settings.css"/>
+        <link rel="stylesheet" href="../assets/css/footer.css"/>
+        <link rel="stylesheet" href="../assets/css/select.css"/>
+
+        <!-- JS -->
+        <script src="../assets/js/libs/jquery.min.js"></script>
+        <script src="../assets/js/libs/chart.min.js"></script>
+        
+        <script src="../assets/js/functions.js"></script>
+        <script src="../assets/js/navbar.js"></script>
+        <script src="../assets/js/stats.js"></script>
+        <script src="../assets/js/select.js"></script>
+    </head>
+    <body>
+        <navbar>
+            <div id="nav-home" class="active"><i class="fa-solid fa-house"></i></div>
+            <div id="nav-news"><i class="fa-solid fa-newspaper"></i></div>
+            <div id="nav-settings"><i class="fa-solid fa-gear"></i></div>
+        </navbar>
+        <main>
+            <div id="home">
+                <div id="h-top">
+                    <span class="title">Stats:</span><br/>
+                    <span class="subtitle">Last update: 01-09-2022 (6:51pm)</span>
+                    <div class="md-select">
+                        <label for="ul-id">
+                            <button type="button" class="ng-binding"><img src="../data/svg/world.svg" width="20px"></img></button>
+                        </label>
+                            
+                        <ul role="listbox" id="ul-id" class="md-whiteframe-z1" aria-activedescendant="world" name="ul-id">
+                            <li role="option" id="WORLD" class="ng-binding ng-scope sactive" tabindex="-1" aria-selected="true"><img src="../data/svg/world.svg" width="15px"></img> World</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="h-stats">
+                    <canvas id="chart"></canvas>
+                </div>
+            </div>
+            <div id="news" style="display: none;">
+                <div id="n-top">
+
+                </div>
+                <div id="n-news">
+
+                </div>
+            </div>
+            <div id="settings" style="display: none;">
+                SETTINGS
+            </div>
+        </main>
+        <footer>
+
+        </footer>
+    </body>
+</html>

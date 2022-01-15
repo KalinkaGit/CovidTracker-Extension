@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "COVIDTracker",
+    "description": "Track information relating to COVID-19 and be informed of the progress of COVID in each country!",
+    "author": "Kalinka",
+    "version": "0.0.1",
+
+    "icons": {
+        "16": "assets/img/icons/16.png",
+        "48": "assets/img/icons/48.png",
+        "128": "assets/img/icons/128.png"
+    },
+
+    "permissions": [
+        "notifications",
+        "storage"
+    ],
+
+    "action": {
+        "default_icon": "assets/img/icons/128.png",
+        "default_popup": "src/popup.html"
+    },
+    
+    "background": {
+        "service_workers": [
+            "src/background.js"
+        ]
+    }
+}

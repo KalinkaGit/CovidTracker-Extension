@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    width: 500px;
+    height: 500px;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+    background-color: #203354;
+}
+
+/**
+ *
+ *     SCROLLBAR
+ *
+ */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+::-webkit-scrollbar-track {
+    background: #1c2e4a;
+}
+  
+::-webkit-scrollbar-thumb {
+    background: #16233a;
+    border-radius: 15px;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    background: #101a2b;
+}
+
+/**
+ *
+ *     FONTS
+ *
+ */
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf'), format('truetype');
+}
